@@ -12,3 +12,5 @@ stupid wife should apologize to me
 you shuould do it above quickly1
 
 dev branch
+
+Creating a new branch is quick & simple.
