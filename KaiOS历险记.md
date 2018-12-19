@@ -20,17 +20,23 @@
    2. 通过USB装置连接，打开终端 
 
    ```shell
-   	
-   	adb root //
-   
-   	adb devices //查看设备是否连接上
-   
-   	sudo adb kill-server
-   
-   	sudo adb start-server
-   
-   	lsusb //可以查看到当前进程与设备id
+   adb root //
+   adb devices //查看设备是否连接上
+   sudo adb kill-server
+   sudo adb start-server
+   lsusb //可以查看到当前进程与设备id
    ```
 
 4. 对于下周的展望，尽快融入工作环境
 
+# 暂定 第三周(2018.12.17)
+
+1. git fork的仓库与源库保持代码同步(使用命令行)
+
+   ``` shell
+   git remote -v //查看远程库信息
+   git remote add upstream git@github.com:xxx/xxx.git //添加源库
+   git fetch upstream //fetch后在本地生成了新的本地分支：upstream/master
+   git merge upstream/master //合并源库代码到本地
+   git push //推送到自己远程库
+   ```
