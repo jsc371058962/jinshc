@@ -29,7 +29,7 @@
 
 4. 对于下周的展望，尽快融入工作环境
 
-# 暂定 第三周(2018.12.17)
+# 推送 第三周(2018.12.17)
 
 1. git fork的仓库与源库保持代码同步(使用命令行)
 
@@ -47,9 +47,7 @@
 
 3. 记一个比较悲剧的事情,上午花了一些时间总结了一部分现在的业务逻辑,搞双屏关机重启的时候忘记保存了,nngt,只能重新再搞了
 
-4. privileged  有特权的,有优惠的  certified 合法的,有保证的
-
-5. .deb包的安装卸载命令 
+4. .deb包的安装卸载命令 
 
    ```shell
    sudo dpkg -i xxx.deb #安装iptux.deb软件包（其中-i等价于--install）
@@ -59,7 +57,7 @@
 
    注：dpkg命令无法自动解决依赖关系。如果安装的deb包存在依赖包，则应避免使用此命令，或者按照依赖关系顺序安装依赖包。
 
-6. Ubuntu下修改磁盘分区名称,因为自己装系统的时候貌似没注意,导致装了两个名称表现一样的的磁盘分区名称,每次找文件在此两盘中做抉择都会搞错,故决定给其改名字做一区分
+5. Ubuntu下修改磁盘分区名称,因为自己装系统的时候貌似没注意,导致装了两个名称表现一样的的磁盘分区名称,每次找文件在此两盘中做抉择都会搞错,故决定给其改名字做一区分
 
    ``` shell
    sudo fdisk -l // 获取磁盘分区信息
@@ -78,6 +76,84 @@
    sudo ntfslabel -f /dev/sda5 Twitter // 修改名称
    ```
 
+6. 作为`ubuntu`小白一枚,开始安装`nodejs`的时候,不明就里直接使用`sudo apt-get install nodejs`,其实应该使用[https://github.com/nodesource/distributions/blob/master/README.md](https://github.com/nodesource/distributions/blob/master/README.md)文档进行安装的,可以安装指定版本的`nodesource`,现在安装的是高版本的`v11.x`,尴尬的问题来了,现在开发环境上需要是`8.x`版本的node,各种降版本都行不通,只能变通的想其他办法来使用.<font color='red'>`nvm`到你了,node版本管理工具,使我们合理的切换node环境版本</font>
+
+   To install or update nvm, you can use the [install script](https://github.com/creationix/nvm/blob/v0.33.11/install.sh) using cURL:
+
+   ```shell
+   curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+   ```
+
+   or wget
+
+   ```shell
+   wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+   ```
+
+   test
+
+   ```shell
+   nvm --version
+   command -v nvm
+   ```
+
+   接下来查看系统已安装的node版本
+
+   ```shell
+   nvm ls
+   ->       v8.8.0
+          v10.14.2
+            system
+   default -> 8.8.0 (-> v8.8.0)
+   node -> stable (-> v10.14.2) (default)
+   stable -> 10.14 (-> v10.14.2) (default)
+   iojs -> N/A (default)
+   lts/* -> lts/dubnium (-> v10.14.2)
+   lts/argon -> v4.9.1 (-> N/A)
+   lts/boron -> v6.15.1 (-> N/A)
+   lts/carbon -> v8.14.1 (-> N/A)
+   lts/dubnium -> v10.14.2
+   ```
+
+   查看远程node版本
+
+   ```shell
+   nvm ls-remote
+   ```
+
+   选择安装,我这边选择安装了笔记时间最新版本`(20181221)`的最新稳定版本`v10.14.2LTS`版本,以及目前项目所需的`v8.x`版本的`v8.8.0`版本,图个吉利数字哈哈
+
+   切换:
+
+   ```she
+   nvm use 8.8.0
+   Now using node v8.8.0 (npm v5.4.2)
+   ```
+
+   good!
+
+   `yarn`的安装[https://yarn.bootcss.com/docs/install/#debian-stable](https://yarn.bootcss.com/docs/install/#debian-stable)
+
+   使用homebrew安装版本过低,修改链接[https://www.jianshu.com/p/754823b00275](https://www.jianshu.com/p/754823b00275)
+
+   熟悉一下`yarn`的使用,和`npm`类似
+
+   > 极其快速
+
+   > Yarn 会缓存它下载的每个包，所以无需重复下载。它还能并行化操作以最大化资源利用率，安装速度之快前所未有
 
 
 
+## **比较重要的事情是**
+
+终于理清了这边的`git`使用思路,
+
+也比较明确以后若是修改`bug`或者是添加需求`code`时的协作,
+
+虽然觉得这不是最重要的,
+
+但是也是第一次在项目上使用`gitbash`还是蛮期待的,
+
+觉得`git`真的是非常强大的版本管理系统,
+
+其实也不算晚,弄清楚了就好
