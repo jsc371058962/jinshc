@@ -1,4 +1,6 @@
 # 新公司
+KaiOS主要是基于FireFox浏览器内核的产品，不具有广泛遵守的web业界标准，故需以心避之。
+
 以后的酸甜苦辣会更新到这个下面，感觉记录生活还是很有必要的，哈哈
 
 # 入职 第一周(2018.12.03)
@@ -39,6 +41,8 @@
    git fetch upstream // fetch后在本地生成了新的本地分支：upstream/master
    git merge upstream/master // 合并源库代码到本地
    git push // 推送到自己远程库
+   
+   git remote remove upstream // 删除关联的远程仓库
    ```
 
 2. 外界显示器到手,连接上外接显示器分辨率总是`1280*768`让人不爽,搜索答案无非两个
@@ -158,7 +162,7 @@
 
 其实也不算晚,弄清楚了就好
 
-# 暂定 第四周(2018.12.24)
+# 盲目 第四周(2018.12.24)
 
 1. 安装了`electronic-wechat`,但感觉不好用，又给卸载了，因为在左侧边栏的微信图标显示的是？，个人受不了啊，源码也没看，恩就这样。
 
@@ -171,4 +175,35 @@
    sudo apt-get -f install
    ```
 
-4. `deadline`了，但是我还是没写多少啊，基本代码的流程都没走完，就按照我自己的理解写点算了，反正肯定写的不好。。。无语了对自己
+4. `deadline`了，但是我还是没写多少啊，基本代码的流程都没走完，就按照我自己的理解写点算了，反正肯定写的不好。。。无语了对自己。
+
+# 啥也没搞 第五周(20190102)
+
+1. `Happy New Year !`(值得占一行)
+2. 跟踪了一下sms关于<span style="color:red;font-weight:bold;">无卡发送信息</span>的`code`，会去跟踪到`code`
+3. 我有点晕菜了，这种熟悉业务的方式绝对是不正确的，让新员工自己看业务，1没资料2业务没做过3code风格陌生4没有框架的使用，虽然说会使用框架是最低级的程序猿，我承认。但这种方式在新员工熟悉业务的过程中如果出现偏差，理解错误，流程不完整核心code找错了，要如何办理？重新推倒再另行理解？资源浪费严重
+4. 如果业务看不下去的时候一定要去其他地方汲取养分，提高层次方是王道
+
+# 啥也没搞 第六周(20190107)
+
+1. 怎么心中又有迷茫不安的情绪了，WTF！尽快安抚一下，渠道是既定的，没有捷径可越。
+
+2. 4年一个行业可以发展出很多的事情，但是万变不离其宗的是其形成此势头的根源，万物皆有源，而各个框架发展蓬勃的核心就是JavaScript，理解她你就能掌握个中变化
+
+3. 我能怎么办，继续看一下代码吧，鄙人心里其实很慌，毕竟熟悉代码时间过长，但若是没有突破性进展的话很难有说服力，这就很尴尬了。我在想这是不是一个正确的做法，但是我觉得对我自己是没有任何益处。这是一个艰难的时期，比当初找这份工作的过程还艰难数倍。
+
+4. 把`gitlab-ci`构建的时候`pipeline`失败的情况解决了，`SSH_PRIVATE_KEY`要与项目连接，翻了各种帖子还是这l两个帖子起作用了[https://gitlab.com/gitlab-examples/ssh-private-key/issues/1](https://gitlab.com/gitlab-examples/ssh-private-key/issues/1)，[https://www.ict.inaf.it/gitlab/help/articles/laravel_with_gitlab_and_envoy/index.md#add-ssh-key](https://www.ict.inaf.it/gitlab/help/articles/laravel_with_gitlab_and_envoy/index.md#add-ssh-key)
+
+   > ssh-keygen: no password
+   >
+   > cat ~/.ssh/id_rsa: copy all of the private key text block
+   >
+   > cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+   >
+   > Paste the private key into GitLab secret variables for the project
+
+5. 工作和家里总得占一样吧
+
+# 暂定 第七周(20190114)
+
+1.
