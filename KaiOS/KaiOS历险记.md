@@ -204,6 +204,14 @@ KaiOS主要是基于FireFox浏览器内核的产品，不具有广泛遵守的we
 
 5. 工作和家里总得占一样吧
 
-# 暂定 第七周(20190114)
+# 啥也没搞 第七周(20190114)
 
-1.
+1. 嗯，庸碌无为
+2. 这快过年了，每个在外边的人都会有抢票这个经历，即使我近在西安，离家160公里一样要抢票，但是没抢到哈哈
+3. 熟悉UX新特性，并需要着手修改这个东西，也总算是有的新的事情了，我自己都不晓得颓成啥样了，反复提醒自己这样是错误的，但是有气无力的挣扎之下感觉没啥大作用，克服一下克服一下。fighting！
+4. compose: 撰写
+5. [KaiOS员工手册](https://kaios.sharepoint.com/:b:/r/sites/KaiOSTechnologiesInc/Shared%20Documents/Company%20Policy/KaiOS-Employee%20Handbook-China%20V1.1-20181001.pdf?csf=1&e=RTec1C)
+
+# 暂定 第八周(20190121)
+
+1. 本来本周要做的v3.0的特性被领导和UX毙掉了，所以我现在又要做其他的，像是熟悉Group Message的热性，以后要做的，还有一个是Message结构要重写
